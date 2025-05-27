@@ -31,6 +31,7 @@ def create_batch_script(
 # rm -rf firecrest-ci
 git clone -b {branch} {repo} firecrest-ci
 cd firecrest-ci
+cd use-case-CI-pipeline
 """
 
     if custom_modules:

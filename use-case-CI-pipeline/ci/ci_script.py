@@ -39,6 +39,7 @@ def select_dict_by_name(name, list_of_dicts, select_key="name"):
 def check_mandatory_env_var(env_var):
     r = os.environ.get(env_var)
     if not r:
+        print(f"Mandatory environment variable `{env_var}` is not set")
         exit(1)
 
     return r
